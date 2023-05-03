@@ -1,0 +1,387 @@
+/* 第一部分 */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+.menu {
+    width:1264.67px;
+    margin: 0 auto;
+    padding: 0px 30px;
+    height: 36px;
+    line-height: 36px;
+    background-color: #004c7e;
+    font-size: 14px;
+    font-family: Microsoft YaiHei;
+}
+
+.menu-right {
+    float: right;
+    width: 600px;
+    height: 36px;
+}
+
+.menu-right li {
+    float: right;
+    padding: 0px 9px;
+    width: auto;
+    height: 36px;
+    line-height: 36px;
+
+}
+
+.menu-right li a {
+    color: #ebb428;
+}
+
+.menu-right li a:hover {
+    color: #ffc669;
+    text-decoration: underline;
+}
+
+.menu-right img {
+    width: 26px;
+    height: 26px;
+    margin: 5px 0px;
+}
+
+.menu-left {
+    float: left;
+    height: 36px;
+}
+
+.menu-left li {
+    float: left;
+    position: relative;
+    width: auto;
+    height: 36px;
+    line-height: 36px;
+    padding: 0px 14px;
+}
+
+.menu-left li a {
+    height: 16px;
+    line-height: 16px;
+    color: #cbd6e3;
+}
+.menu-left li a::before  {
+  content: ""; 
+  position: absolute; 
+  left: -3px; 
+  top: 13px;
+  width: 2px; 
+  height: 10px; 
+  background-color:#a3b8d0; 
+}
+.menu-left li:first-child  {
+ padding: 0px 14px 0px 0px;
+}
+.menu-left li:first-child a::before{
+    content: none;
+}
+.menu-left li a:hover {
+    color: #d5d5d5;
+}
+
+/* 第二部分 */
+.logo {
+   width:1264.67px;
+   height: 128px;
+    padding: 14px 32px;
+    margin: 0 auto;
+    background: #005691;
+
+}
+
+.logo-left {
+    float: left;
+    width: 221px;
+    height: 64px;
+    float: left;
+    margin:18px 0px;
+}
+
+ .logo-left img {
+    height: 64px;
+    width: 221px;
+}
+
+.logo-right {
+    width: 270px;
+    height: 78px;
+    float: right;
+    margin: 11px 0px;
+}
+
+ .logo-right img {
+     float: left;
+    height: 78px;
+    width: 270px;
+}
+
+/* 第三部分 */
+.navbar {
+ width:1264.67px;
+    margin: 0 auto;
+    padding: 0px 30px;
+    height: 50px;
+    list-style: none;
+    background-color: #0e6bc2;
+}
+
+.navbar>li {
+    float: left;
+    line-height: 50px;
+    position: relative;
+}
+
+.navbar a:hover {
+    background-color: #005691;
+}
+
+.navbar>li a {
+    display: inline-block;
+    padding: 0px 40px;
+    color: #ffffff;
+    text-align: center;
+}
+
+/* 下拉菜单 */
+.dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #0e6bc2;
+    z-index: 999;
+}
+
+.navbar .dropdown li {
+    height: 35px;
+    line-height: 35px;
+    color: #fff;
+    text-align: center;
+}
+
+.navbar .dropdown li a {
+    display: block;
+    padding: 0;
+    font-size: 13px;
+    font-weight: 300;
+}
+
+.navbar li:hover>.dropdown {
+    display: block;
+    transition: all 1s ease;
+}
+/* 帮助，链接 */
+.help-connection{
+ width:1264.67px;
+    height: 329px;
+    margin: 0 auto;
+    padding: 60px 50px 20px 50px;
+    background-color: #0062CF;
+    background-image:url(./images/10010.png); 
+    background-repeat: no-repeat;
+    background-position: center;
+    color: white;
+    font-size: 12px;
+    font-family: sans-serif;
+}
+ .other{
+float: left;
+width: 343px;
+height: 220px;
+border-right: 1px solid #fff;
+}
+ .other li{
+float: left;
+height: 20px;
+line-height: 20px;
+margin: 5px 0px;
+}
+
+ .other li a{
+    float: left;
+    width: 150px;
+    height: 14px;
+    line-height: 14px;
+    padding: 0px 5px;
+    border-left: 3px solid #fff;
+    color: white;
+}
+
+ .logo-image  {
+float: left;
+width: 400px;
+height: 249px;
+ background-image:url(./images/10011.png); 
+ background-repeat: no-repeat;
+  background-position: center;
+
+}
+.contact-information{
+float: left;
+width: 366px;
+height: 144px;
+border-left: 1px solid #fff;
+}
+.social-software{
+float: right;
+width: 123px;
+height: 34px;
+margin-bottom: 10px;
+}
+.social-software li{
+ float: left;
+ width: 34px;
+ height: 34px;
+ margin: 0px 3px;
+}
+.social-software  li a {
+  display: inline-block;
+  position: relative;
+  width: 34px; /* 图标显示大小 */
+  height: 34px;
+  background: url("./images/联系方式.png") no-repeat 0 0; /*设置元素背景图片，背景位置设置为0 0*/
+}
+
+li:first-child a {
+ background-position: 0px 0px;
+}
+
+li:nth-child(2) a {
+  background-position: -52px 0;
+}
+
+li:nth-child(3) a {
+  background-position: -104px 0px; 
+}
+.wb:hover::after {
+  content: url('./images/二维码1.jpg'); /* 鼠标悬停时显示的二维码图片 */
+  position: absolute;
+  top: -220px; /* 二维码距离a元素顶部的距离 */
+  left: -80px;
+  width: 200px;
+  height: 200px;
+  display: block;
+}
+.wx:hover::after {
+  content: url('./images/二维码2.jpg'); 
+  position: absolute;
+  top: -220px;
+  left: -80px;
+  width: 200px;
+  height: 200px;
+  display: block;
+}
+.yb:hover::after {
+  content: url('./images/二维码3.png'); 
+  position: absolute;
+  top: -220px;
+  left: -80px;
+  width: 200px;
+  height: 200px;
+  display: block;
+}
+.email {
+float:right;
+height: 22px;
+}
+.email li{
+    display: inline-block;
+    height: 13px;
+    line-height: 13px;
+    border-right: 3px solid #fff;
+}
+.email li a{
+     padding: 0px 10px;
+    font-size: 12px;
+    color:#fff;
+}
+.email li:nth-child(4){
+    border: none;
+}
+.otherways-contact li{
+    float:right;
+    height: 22px;
+    line-height: 22px;
+}
+.otherways-contact li p{
+ margin-right: 0;
+}
+/* 倒数第二部分 */
+.author {
+  width:1264.67px;
+    margin: 0 auto;
+    height: 54px;
+    padding: 12px 40px;
+    background-color: #004ca2;
+    font: 12px "Microsoft YaHei", Tohoma, Arial;
+}
+
+.author .box {
+    width: 550px;
+    height: 30px;
+    margin: 0px auto;
+}
+
+.author .box li {
+    float: left;
+    height: 30px;
+    line-height: 30px;
+   margin-right: 27px;
+}
+
+.one p{
+    display: inline-block;
+line-height: 16px;
+ color: #CBD6E3;
+}
+.two a{
+ color: #DDDDDD;
+}
+.two a:hover{
+    text-decoration:underline;
+}
+.three img {
+    position: relative;
+    top:4px;
+    width: 16px;
+    height: 16px;
+}
+
+.three a {
+    display: inline-block;
+    color: #939393;
+    
+}
+
+/* 最后一部分 */
+.footer {
+    width:1264.67px;
+    margin: 0 auto;
+    padding: 0px 32px;
+    height: 80px;
+    line-height: 80px;
+    background-color: #f5f4f2;
+}
+
+.footer li {
+    height: 80px;
+    width: 80px;
+    margin: 0 auto;
+}
+
+.footer  img {
+    height: 80px;
+    width: 80px;
+}
